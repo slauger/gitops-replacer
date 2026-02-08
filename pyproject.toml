@@ -52,9 +52,7 @@ build_command = "pip install build && python -m build"
 commit_parser = "angular"
 major_on_zero = true
 tag_format = "v{version}"
-
-[tool.semantic_release.commit_message]
-message = "chore(release): {version} [skip ci]"
+commit_message = "chore(release): {version} [skip ci]"
 
 [tool.semantic_release.branches.main]
 match = "(main|master)"
