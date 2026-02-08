@@ -1,7 +1,7 @@
 # gitops-replacer
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyPI version](https://img.shields.io/pypi/v/gitops-replacer.svg)](https://pypi.org/project/gitops-replacer/)
 [![PyPI downloads](https://img.shields.io/pypi/dm/gitops-replacer.svg)](https://pypi.org/project/gitops-replacer/)
 
@@ -21,7 +21,7 @@ A lightweight CLI tool that automates value updates in GitOps repositories using
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.10+
 - A GitHub/GitHub Enterprise token with content read/write access
 
 ## Installation
