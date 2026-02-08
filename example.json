@@ -1,0 +1,11 @@
+{
+  "gitops-replacer": [
+    {
+      "repository": "slauger/gitops",
+      "branch": "main",
+      "file": "apps/eibtalerhof-mcp-server/Chart.yaml",
+      "depName": "eibtalerhof-mcp-server",
+      "when": "^refs/heads/main$"
+    }
+  ]
+}
