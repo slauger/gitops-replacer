@@ -69,10 +69,10 @@ Add a comment **above** the line you want to update:
 
 ```yaml
 dependencies:
-  # gitops-replacer: eibtalerhof-mcp-server
-  - name: eibtalerhof-mcp-server
+  # gitops-replacer: my-app
+  - name: my-app
     version: "0.0.0-e0f72bb"
-    repository: oci://registry.apps.lnxlabs.de/eibtalerhof
+    repository: oci://registry.example.com/charts
 
   # gitops-replacer: another-chart
   - name: another-chart
@@ -89,16 +89,16 @@ The tool will:
 **Chart.yaml (Helm dependency version):**
 ```yaml
 dependencies:
-  # gitops-replacer: eibtalerhof-mcp-server
-  - name: eibtalerhof-mcp-server
+  # gitops-replacer: my-app
+  - name: my-app
     version: "0.0.0-e0f72bb"
-    repository: oci://registry.apps.lnxlabs.de/eibtalerhof
+    repository: oci://registry.example.com/charts
 ```
 
 **values.yaml (image tag):**
 ```yaml
-# gitops-replacer: mcp-server-image
-image: registry.apps.lnxlabs.de/eibtalerhof/mcp-server:1.2.3
+# gitops-replacer: my-app-image
+image: registry.example.com/myorg/my-app:1.2.3
 ```
 
 **Note:** Only YAML files are supported (JSON has no comments). GitOps manifests are typically YAML.
@@ -143,10 +143,10 @@ Default format is **JSON**. YAML (`.yaml`/`.yml`) is supported as well.
 {
   "gitops-replacer": [
     {
-      "repository": "slauger/gitops",
+      "repository": "acme/gitops",
       "branch": "main",
-      "file": "apps/eibtalerhof-mcp-server/Chart.yaml",
-      "depName": "eibtalerhof-mcp-server",
+      "file": "apps/my-app/Chart.yaml",
+      "depName": "my-app",
       "when": "^refs/heads/main$"
     }
   ]
