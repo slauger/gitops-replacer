@@ -8,11 +8,11 @@ version = "0.1.1"
 authors = [
     {name = "Simon Lauger", email = "simon@lauger.de"}
 ]
-description = "Automated YAML/JSON value updates for GitOps repositories via GitHub API"
+description = "Marker-based value replacer for GitOps repositories via GitHub API"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"
-keywords = ["gitops", "yaml", "json", "kubernetes", "helm", "automation", "github", "ci-cd", "deployment"]
+keywords = ["gitops", "yaml", "kubernetes", "helm", "automation", "github", "ci-cd", "deployment"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
